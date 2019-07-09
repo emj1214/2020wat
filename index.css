@@ -1,0 +1,137 @@
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.notActive {
+    padding: 14px 16px;
+}
+
+.topnav a:hover {
+    text-decoration: none;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0);
+    border: white;
+    border-style: solid;
+    border-width: 2px; 
+    padding: 12px 14px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+html { 
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('marian.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: sans-serif
+}
+
+.name {
+    margin-bottom: 0px;
+}
+
+.name h2 {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.footer {
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+}
+
+p {
+    display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+ul {
+    text-align: left;
+    font-size: 24pt;
+    font-family: sans-serif;
+    color: white;
+    padding: 5px;
+}
+
+.none {
+    list-style: none;
+    padding-top: 12px;
+}
+
+li {
+    text-align: left;
+    font-size: 18pt;
+    font-family: sans-serif;
+    color: white;
+}
+
+.title {
+    text-align: left;
+    font-size: 36pt;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 20px;
+}
+
+body {
+    padding: 20px;
+}
+
+iframe {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: darkgray;
+}
+
+.points {
+    list-style-type: circle;
+    padding-left: 24px;
+    padding-top: 12px;
+}
