@@ -13,7 +13,7 @@
     <a href="indiv.html" class="active">Individuals</a>
     <a href="hrs.html" class="notActive">Homerooms</a>
     <a href="class.html" class="notActive">Class</a>
-    <a href="helpus.html" class="notActive">Fundraise</a>
+    <a href="helpus.html" class="notActive">Help Us</a>
     <a href="about.html" class="notActive">About</a>
 </div>
 
@@ -25,7 +25,7 @@
     <li>
         To hit our goal, each student must bring in
     </li>
-    <li id="indivleft"></li>
+    <li id="indivNeed"></li>
     <br>
     <li>
         So far, each student has brough in an average of
@@ -37,3 +37,22 @@
 
 </html>
 
+<script type="module">
+
+import * as teachers from '/numbers.js';
+
+const teacherArray = [];
+for (let teacher in teachers) {
+    teacherArray.push({
+        name: teacher,
+        weeks: teachers[teacher]
+    });
+}
+
+const need = document.querySelector('#indivNeed');
+need.innerText = '$' + ((24000 - teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher)) / 168).toFixed(2);
+
+const have = document.querySelector('#indivHave');
+have.innerText = '$' + ((teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher)) / 168).toFixed(2);
+
+</script>

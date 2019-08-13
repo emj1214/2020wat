@@ -109,6 +109,15 @@ li {
     font-size: 18pt;
     font-family: sans-serif;
     color: white;
+    padding: 8px;
+}
+
+a {
+    color: lightblue;
+}
+
+li.about {
+    text-indent: 36px;
 }
 
 .title {
