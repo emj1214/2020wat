@@ -1,65 +1,20 @@
-const greisch = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const greisch = [0,0,0,0];
 
-const golka = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const golka = [0,0,0,0];
 
-const spanny = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const spanny = [0,0,0,0];
 
-const delkamiller = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const delkamiller = [0,0,0,0];
 
-const cotton = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const cotton = [0,0,0,0];
 
-const bauman = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const bauman = [0,0,0,0];
 
-const piernicky = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const piernicky = [0,0,0,0];
 
-const sisson = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const sisson = [0,0,0,0];
 
-const mcgill = {
-    w1 : "0",
-    w2 : "0",
-    w3 : "0",
-    w4 : "0",
-};
+const mcGill = [0,0,0,0];
 
 
-export { greisch , golka , spanny , delkamiller , cotton , bauman , piernicky , sisson , mcgill };
+export { greisch , golka , spanny , delkamiller , cotton , bauman , piernicky , sisson , mcGill };

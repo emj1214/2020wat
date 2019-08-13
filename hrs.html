@@ -22,25 +22,40 @@
 </div>
 
 <ul class="none">
+
     <li>
-        Testing
+        <span id="ranks"></span>
     </li>
 
-    <div id="ranks">
-        <ul id="amounts"> 
-
-        </ul>
-    </div>
 </ul>
 
 </body>
 
 </html>
 
-<script src="numbers.js">
+<script type="module">
 
-import { greisch , golka , spanny , delkamiller , cotton , bauman , piernicky , sisson , mcgill } from './numbers.js';
+import * as teachers from '/numbers.js';
 
-document.getElementById("amounts") = alert (greisch.w1);
+const teacherArray = [];
+for (let teacher in teachers) {
+    teacherArray.push({
+        name: teacher,
+        weeks: teachers[teacher]
+    });
+}
+
+const sortedWeeks = teacherArray.sort((a, b) => b.weeks[0] - a.weeks[0]);
+
+function teachersToString(teacher) {
+    return teacher.name[0].toUpperCase() + teacher.name.substring(1) + ': $' + teacher.weeks.reduce((sum, current) => sum + current, 0);
+}
+
+function capitalize(name) {
+    return name[0].toUpperCase() + name.substring(1);
+}
+
+const ranking = document.querySelector('#ranks');
+ranks.innerText = sortedWeeks.map(week => (sortedWeeks.indexOf(week) +1) + '. ' + teachersToString(week)).join('\n');
 
 </script>
