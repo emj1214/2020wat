@@ -18,13 +18,22 @@
 </div>
 
 <div class="title">
-    Homeroom Stats
+    McGill Weekly Stats
 </div>
 
 <ul class="none">
 
-    <li><b>Homeroom Totals Leaderboard</b></li>
-    <li id="ranks"></li>
+    <li>Goal: $0.00</li>
+    <br>
+    <li id="total"></li>
+    <br>
+    <li id="w1"></li>
+    <br>
+    <li id="w2"></li>
+    <br>
+    <li id="w3"></li>
+    <br>
+    <li id="w4"></li>
 
 </ul>
 
@@ -40,7 +49,7 @@
     <a href="delks.html" class="notActive">Delkamiller</a>
     <a href="golka.html" class="notActive">Golka</a>
     <a href="greisch.html" class="notActive">Greisch</a>
-    <a href="mcgill.html" class="notActive">McGill</a>
+    <a href="mcgill.html" class="active">McGill</a>
     <a href="piernicky.html" class="notActive">Piernicky</a>
     <a href="sisson.html" class="notActive">Sisson</a>
     <a href="spanny.html" class="notActive">Spanny</a>
@@ -63,13 +72,23 @@ for (let teacher in teachers) {
     });
 }
 
-const sortedWeeks = teacherArray.sort((a, b) => b.weeks.reduce((sum, current) => sum + current, 0) - a.weeks.reduce((sum, current) => sum + current, 0));
-
 function teachersToString(teacher) {
-    return teacher.name[0].toUpperCase() + teacher.name.substring(1) + ': $' + teacher.weeks.reduce((sum, current) => sum + current, 0);
+    return teacherArray.find( teacher => teacher.name === 'mcGill' ).name[0].toUpperCase() + teacher.name.substring(1) + ': $' + teacher.weeks.reduce((sum, current) => sum + current, 0);
 } 
 
-const ranking = document.querySelector('#ranks');
-ranks.innerText = sortedWeeks.map(week => (sortedWeeks.indexOf(week) +1) + '. ' + teachersToString(week)).join('\n \n');
+const btotal = document.querySelector('#total');
+btotal.innerText = 'Current total: $' + teacherArray.find( teacher => teacher.name === 'mcGill' ).weeks.reduce((sum, current) => sum + current, 0).toFixed(2);
+
+const week1 = document.querySelector('#w1');
+week1.innerText = 'Week 1: $' + teacherArray.find( teacher => teacher.name === 'mcGill' ).weeks[0].toFixed(2);
+
+const week2 = document.querySelector('#w2');
+week2.innerText = 'Week 2: $' + teacherArray.find( teacher => teacher.name === 'mcGill' ).weeks[1].toFixed(2);
+
+const week3 = document.querySelector('#w3');
+week3.innerText = 'Week 3: $' + teacherArray.find( teacher => teacher.name === 'mcGill' ).weeks[2].toFixed(2);
+
+const week4 = document.querySelector('#w4');
+week4.innerText = 'Week 4: $' + teacherArray.find( teacher => teacher.name === 'mcGill' ).weeks[3].toFixed(2);
 
 </script>
