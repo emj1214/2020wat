@@ -50,9 +50,9 @@ for (let teacher in teachers) {
 }
 
 const need = document.querySelector('#indivNeed');
-need.innerText = '$' + ((24000 - teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher)) / 168).toFixed(2);
+need.innerText = '$' + ((22927 - teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher)) / 167).toFixed(2);
 
 const have = document.querySelector('#indivHave');
-have.innerText = '$' + ((teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher)) / 168).toFixed(2);
+have.innerText = '$' + ((teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher)) / 167).toFixed(2);
 
 </script>
