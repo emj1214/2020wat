@@ -8,11 +8,11 @@
     color:white;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .notActive {
-    padding: 14px 16px;
+    padding: 22px 24px;
 }
 
 .topnav a:hover {
@@ -24,7 +24,7 @@
     border: white;
     border-style: solid;
     border-width: 2px; 
-    padding: 12px 14px;
+    padding: 20px 22px;
     color: #fff;
     border-radius: 5px;
 }
