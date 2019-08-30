@@ -27,7 +27,13 @@
         Right now, the Class of 2020 has raised
     </li>
 
+    <br>
+
     <li id="total"></li>
+
+    <br>
+
+    <li> of our class goal $22,927 from homerooms alone.</li>
 
 </ul>
 
@@ -48,6 +54,6 @@ for (let teacher in teachers) {
 }
 
 const total = document.querySelector('#total');
-total.innerText = '$' + (teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher)).toFixed(2);
+total.innerText = '$' + (teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher)).toFixed(2) + ' (' + ((teacherArray.map(teacher => teacher.weeks.reduce((sum, week) => sum + week)).reduce((sum, teacher) => sum + teacher))/22927).toFixed(2) + '%)';
 
 </script>
