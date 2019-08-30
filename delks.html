@@ -77,7 +77,7 @@ function teachersToString(teacher) {
 } 
 
 const btotal = document.querySelector('#total');
-btotal.innerText = 'Current total: $' + teacherArray.find( teacher => teacher.name === 'delkamiller' ).weeks.reduce((sum, current) => sum + current, 0).toFixed(2) + ' => ' + (teacherArray.find( teacher => teacher.name === 'delkamiller' ).weeks.reduce((sum, current) => sum + current, 0) / 2484).toFixed(2) + '%';
+btotal.innerText = 'Current total: $' + teacherArray.find( teacher => teacher.name === 'delkamiller' ).weeks.reduce((sum, current) => sum + current, 0).toFixed(2) + ' => ' + ((teacherArray.find( teacher => teacher.name === 'delkamiller' ).weeks.reduce((sum, current) => sum + current, 0) / 2484) * 100).toFixed(2) + '%';
 
 const week1 = document.querySelector('#w1');
 week1.innerText = 'Week 1: $' + teacherArray.find( teacher => teacher.name === 'delkamiller' ).weeks[0].toFixed(2);

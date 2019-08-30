@@ -23,6 +23,8 @@
 
 <ul class="none">
 
+    <li>Last updated on August 30, 2019, at 10:30am. Donations made online in a student's name will be counted on Wednesday, September 4, 2019.</li>
+    <br>
     <li><b>Homeroom Totals Leaderboard</b></li>
     <li id="ranks"></li>
 
@@ -66,7 +68,7 @@ for (let teacher in teachers) {
 const sortedWeeks = teacherArray.sort((a, b) => b.weeks.reduce((sum, current) => sum + current, 0) - a.weeks.reduce((sum, current) => sum + current, 0));
 
 function teachersToString(teacher) {
-    return teacher.name[0].toUpperCase() + teacher.name.substring(1) + ': $' + teacher.weeks.reduce((sum, current) => sum + current, 0);
+    return teacher.name[0].toUpperCase() + teacher.name.substring(1) + ': $' + teacher.weeks.reduce((sum, current) => sum + current, 0).toFixed(2);
 } 
 
 const ranking = document.querySelector('#ranks');
