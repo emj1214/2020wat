@@ -34,7 +34,7 @@
 }
 
 html { 
-  background: url(marian.jpeg) no-repeat center center fixed;
+  background: url(marian.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -43,7 +43,7 @@ html {
 }
 
 .topback {
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgba(0, 0, 0, 0.8);
 }
 
 .name {
