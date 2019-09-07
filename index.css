@@ -78,6 +78,33 @@
     font-family: sans-serif;
 }
 
+.number1 { 
+    background: url(number1.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.allhail { 
+    background: url(allhail.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.wat2018 { 
+    background: url(2018wat.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
 .topback {
     background-color:rgba(0, 0, 0, 0.8);
 }
