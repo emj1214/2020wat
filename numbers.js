@@ -4,7 +4,7 @@ const golka = [378.00, 240.19, 0, 0];
 
 const spanny = [830.00, 151.00, 0, 0];
 
-const delkamiller = [77.05, 627.05, 0, 0];
+const delkamiller = [77.05, 550.00, 0, 0];
 
 const cotton = [392.00, 4057.00, 0, 0];
 
