@@ -14,7 +14,7 @@ const piernicky = [625.00, 458.60, 147.00, 0];
 
 const sisson = [292.00, 236.00, 130.00, 0];
 
-const mcGill = [113.41, 235.00, 1689.00, 0];
+const mcGill = [113.41, 235.00, 1340.59, 0];
 
 
 export { greisch , golka , spanny , delkamiller , cotton , bauman , piernicky , sisson , mcGill };
